@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+body{
+background-color: black;
+  color:white;
+}
+a{
+  color:white;
+  text-decoration:none;
+}
+a:hover{
+  color:red;
+}
+#header{
+  position:sticky;
+  width:100%;
+  height:50px;
+  background-color:black;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction:cloumn;
+  justify-content:space-between;
+}
+.top,ul,li{
+  padding: 6px 8px;
+
+}
+#logo{
+  display:flex;
+  margin-left:5px;
+}
+#header-img{
+  width: 50px; 
+  height: 50px;
+}
+#title{
+  background-color:black;
+  margin-top:3px;
+  padding-top:5px;
+}
+#side{
+  display: flex;
+  list-style-type:none;
+  margin-top: 5px;
+  padding-top: 9px;
+}
+#nav-bar{
+  background-color:black;
+}
+.link{
+   justify-content: flex-end;
+   height: 8px;
+}
+ul{
+  list-style-type:none;
+}
+.log{
+  display: none;
+}
+#form{
+  visibility: hidden;
+}
+/* #email
+{
+  
+} */
+/* video */
+.wel-con {
+display :flex;
+flex-flow: row;
+justify-content: space-around;
+width:100%;
+height:600px ;
+ background-color:#131417;
+}
+.wel-colr{
+  color:#dc143c;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.wel-card{
+  color: #aeaeae;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  border: #361536 solid;
+  margin: 80px 20px;
+  padding:5px  15px; 
+  font-size: medium;
+  width: 550px;
+  height: 320px;
+}
+.wel-cardbor{
+  border-radius: 30px 30px 30px 30px;
+-moz-border-radius: 30px 30px 30px 30px;
+-webkit-border-radius: 30px 30px 30px 30px;
+border: 0px solid #000000;
+  -webkit-box-shadow: -32px -14px 46px 11px rgba(54,21,54,1);
+  -moz-box-shadow: -32px -14px 46px 11px rgba(54,21,54,1);
+  box-shadow: -32px -14px 46px 11px rgba(54,21,54,1);
+}
+.wel-video{
+border: #361536 solid;
+height: 380px;
+margin: 80px 20px;
+}
+#video{
+  width: 660px;
+  height: 380px;
+  border-style: none;
+}
+/* description */
+.feature {
+  margin: 5px 22px;
+  border: white solid 1px;
+  padding: 15px;
+  width: 700px;
+}
+.qut{
+   color:#dc143c;
+  font-family: 'Arvo', serif;
+  font-size:25px;
+}
+#description 
+{
+  font-family: 'Merriweather', serif;
+}
+#buy{
+  font-family: 'Arvo', serif;
+  font-size:25px;
+  text-align:center;
+  color:#dc143c;
+  text-decoration:underline;
+  text-decoration-color:#361536;
+}
+.plan{
+  display:flex;
+  flex-direction:column wrap;
+  width:500px;
+  margin:50px auto;
+  justify-content:space-between;
+}
+#plan-p{
+  
+  -webkit-box-shadow: 13px -1px 17px -3px rgba(71,28,71,1);
+-moz-box-shadow: 13px -1px 17px -3px rgba(71,28,71,1);
+box-shadow: 13px -1px 17px -3px rgba(71,28,71,1);
+}
+#plan-b{
+  -webkit-box-shadow: 13px -1px 17px -3px rgba(71,28,71,1);
+-moz-box-shadow: 13px -1px 17px -3px rgba(71,28,71,1);
+box-shadow: 13px -1px 17px -3px rgba(71,28,71,1);
+
+}
+#last {
+  border: solid transparent;
+  background-color: transparent;
+}
+#re {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Lora", serif;
+}
+#link {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+#link ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: auto;
+  padding: 0;
+  margin-top: -10px;
+}
+/* #profile-link {
+} */
+.icon {
+  text-align: center;
+  margin: 0.8rem;
+}
+#end {
+  text-align: right;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 180px)
+{
+  #plan{
+    width:30%;
+    font-size:5px;
+    flex-flow:row wrap;
+  }
+}
