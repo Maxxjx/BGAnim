@@ -4,123 +4,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>BGAnime</title>
+  <!-- style link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- fonts -->
   <script src="https://kit.fontawesome.com/a0df00e761.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700">
 
 </head>
 <body>
-  <header id="header">
-   <!-- top logo -->  
-   <div id="logo">
-         <a href="#"><img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGcafRMjeSiAlMrqERHxM0wGGGgvXmFnLs9g&usqp=CAU" alt="company logo"></a>
-         <a href="#">
-            <h1 id="title"><span style="color:red">BG</span>Anime</h1></a>
-        </div>
-         <!-- nav bar -->
-      <nav id="nav-bar">
-           <ul id="side">
+  <div class="hero-img">
+    <!-- Nav-bar -->
+    <div class="nav-bar">
+         <!-- top logo -->  
+       <div class="logo">
+           <a href="#"><img id="header-img" src="Asset/logo/mLogo.svg" alt="BGAnime logo"></a>
+         </div>
+             
+         <!-- menu-bar -->  
+        <nav >
+           <ul class="side-navbar">
             <li><a class="nav-link" href="#a1">About</a></li>
             <li><a class="nav-link" href="#a2">Pricing</a></li>
             <li><a class="nav-link" href="#">Help</a></li>
             <li><a class="nav-link" href="#">Contact</a></li>
             <li><a class="nav-link sign" href="#a5">Sign In</a></li>
            </ul>
-      </nav>
-  </header>
-  <!-- log-in from
-  <div class="log" id="a5">
-    <form action="#" id="form">
-      <p>Enter your email:</p>
-      <lable for="email"></label>
-        <input type="email" id="email" name="email" placeholder=" enter your email id">
-        <input id="submit" type="submit" value="submit">
-        </from>
-  </div> -->
-  <!-- video -->
-  <div class="wel-con">
-    <div class="wel-card wel-cardbor">
-      <h2>This is what you been <span class="wel-colr">waiting for</span></h2>
-      <p>House to every anime in extistence and Guide to every soul who wants to embarce anime at it's finest.</p>
-      <h2>This isn't an <span class="wel-colr">entertainment</span>.</br>It's is a <span class="wel-colr">Experience</span></h2>
-    </div>
-    <div class="wel-video">
-      <iframe  id="video" src="https://www.youtube.com/embed/fQ6PRbh-ntM?autoplay=1&mute=1&controls=0&?autoplay=1">
-    </iframe>
-   </div>
- </div>
-    <!--  -->
-    <!-- description -->
-  <div class="feature">
-    <div>
-     <h2 id="a1" class="qut">WATCH YOUR FAVOURIT SHOWS IN HERE:</h2>
-      <p id="description">Housing the biggest collection of Anime on the internet.Right here to watch at your home.</p>
-    </div>
-  <div>
-   2<h3 class="qut">HD-Quality</h3>
-    <p id="description">Anime to watch form normal to HD-Quality</p>
+         </nav>
+      </div>
+   <!-------------log-in-from--------------------->
+   <div class="login-card">
+    <form class="card" onSubmit={handlesubmit}>
+      <div class="log-title">
+        <h3>Become a member</h3>
+      </div>
+      <div>
+        <div class="form-group">
+          <label htmlFor="Email or UserName">Email or username</label>
+          <br />
+          <input type="text" placeholder="Email or username" required class="Input" />
+        </div>
+        <div class="form-group">
+          <label htmlFor="Password">Password</label>
+          <br />
+          <input type="Password" placeholder="Password" required class="Input" />
+
+        </div>
+        <p>
+          <a href="#"> Forgot Password?</a>
+        </p>
+      </div>
+      <div>
+        <button type="submit">Log in</button>
+        <div class="sign-up" action="#">
+          <p>
+            <a href="#"> Haven't registered yet?</a>
+          </p>
+          <button>Sign-Up</button>
+        </div>
+      </div>
+    </form>
   </div>
-  <div>
-  <h3 class="qut">Link Upto-5 device</h3>
-  <p id="description">link upto 5 device to share with your family</p>
+    <!------------intro-card------------->  
+    <div class="wel-card">
+      <h2>This is what you been <span class="wel-colr">Waiting For</span></h2>
+      <p>House to every anime in <span class="wel-colr">Extistence</span>  and Guide to every soul who wants to embarce anime at it's finest.</p>
+      <h2>This isn't an <span class="wel-colr">Entertainment</span>.</h2><h2>It's is an <span class="wel-colr">Experience</span></h2>
+    </div>
+  </div>
+   
+  <!----------------description----------------->
+  <div id="a1" class="feature">
+      <div class="feature-title">
+       <h2  class="qut">WATCH YOUR FAVOURIT SHOWS IN HERE:</h2>
+        <p>Housing the biggest   collection of Anime on the internet.Right here to watch at your home.</p>
+      </div>
+      <ul class="feature-list">
+    <li class="feature-points">
+      <img class="feature-icon" src="asset/image/hdicon.svg">
+     <h3 class="qut">HD-Quality</h3>
+      <p>Anime to watch form normal to HD-Quality</p>
+    </li>
+    <li class="feature-points">
+        <img class="feature-icon" src="asset/image/deviceicon.svg">
+    <h3 class="qut">Link Upto-5 device</h3>
+    <p id="description">link upto 5 device to share with your family</p>
+    </li>
+    <li class="feature-points">
+        <img class="feature-icon" src="asset/image/fastupicon.svg">
+    <h3 class="qut">Fast-Update</h3>
+    <p id="description">Get-live fast update for your favourit show</p>
+    </li>
+      </ul>
 </div>
-  <div>
-  <h3 class="qut">Fast-Update</h3>
-  <p id="description">Get-live fast update with your favourit show</p>
-  </div>
-</div>
-  <p id="buy">Various Plans To Suit Your Needs</p>
-  <div id="a2" class="plan">
-    <div id="plan-b">
+<!---------------Plans-------------->
+<section id="a2" class="plan-card">
+<h2 class="plan-head">Various Plans To Suit Your Needs</h2>
+   <div class="plan">
+    <div class="plan-b">
       <div>
-        <ul id="topic">
-          <li>Basic</li>
-        </ul>
+        <div class="basic-title"><h1>Basic</h1></div>
+          <h2> &#8377 70(Monthly)</h2>
+          <h2> &#8377 700(Annul)</h2>
       </div>
       <div>
         <ul>
-          <li> &#8377 100(Monthly)</li>
-          <li> &#8377 700(Annul)</li>
+          <li><p>Features</p></li>
+          <li><p>Link-upto 2 device</p></li>
+          <li><p>Download storage :20GB</p></li>
+          <li><p>Stream HD-Quality</p></li>
         </ul>
       </div>
-      <div>
-        <ul>
-          <li>Features</li>
-          <li>Link-upto 2 device</li>
-          <li>Download storage :20GB</li>
-          <li>Stream HD-Quality</li>
-        </ul>
+      <div class="basic-btn">
+        <a href="#">Buy</a>
       </div>
     </div>
-    <div id="plan-p">
+    <div class="plan-p">
       <div>
-        <ul id="topic">
-          <li>Premium</li>
-        </ul>
+         <div class="pro-title"><h1>Premium</h1></div>
+          <h2> &#8377 150(Monthly)</h2>
+          <h2> &#8377 1000(Annul)</h2>
       </div>
       <div>
         <ul>
-          <li> &#8377 150(Monthly)</li>
-          <li> &#8377 800(Annul)</li>
+          <li><p>Features</p></li>
+          <li><p>Link-Upto 5 device</p></li>
+          <li><p>Download Storage :50GB</p></li>
+          <li><p>Stream Ultra-HD to normal Quality</p></li>
+          <li><p>Early access to episodes</p></li>
+          <li><p>Get special Update from the show</p></li>
         </ul>
       </div>
-      <div>
-        <ul>
-          <li>Features</li>
-          <li>Link-Upto 5 device</li>
-          <li>Download Storage :50GB</li>
-          <li>Get special Update from the show</li>
-        </ul>
+      <div class="pro-btn">
+        <a href="#">Buy</a>
       </div>
     </div>
   </div>
+</section>
+  <!-------------footer-------------->
   <hr>
   <footer id="last">
     <p id="re"><u>Ways to Reach me :)</u></p>
     <nav id="link">
-      <ul>
+      <ul >
         <li>
           <div class="icon"><i class="fa-brands fa-free-code-camp fa-3x"></i></i><a id="profile-link" href="https://www.freecodecamp.org/Maxx_" target="_blank">Freecodecamp</a></div>
         </li>
@@ -136,8 +164,9 @@
       </ul>
     </nav>
     <hr>
+    <!-------------Copyright--------------->
     <div id="end"> &copy All Rights Reserved
-      Created For Freecodecamp Project</div>
+      A Product Of MDX</div>
 </body>
 
 </html>
