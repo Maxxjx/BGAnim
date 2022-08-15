@@ -8,8 +8,10 @@
   <!-- style link -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- fonts -->
+  <!-- icons -->
   <script src="https://kit.fontawesome.com/a0df00e761.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700">
 <style>
@@ -36,12 +38,13 @@
             <li><a class="nav-link" href="#a2">Pricing</a></li>
             <li><a class="nav-link" href="#">Help</a></li>
             <li><a class="nav-link" href="#">Contact</a></li>
-            <li><a class="nav-link" href="login.html">log-In</a></li>
+            <li><a class="nav-link" onclick="log()">Log-In</a></li>
            </ul>
          </nav>
       </div>
    <!-------------log-in-from--------------------->
-   <div class="login">
+   <div id="full-card">
+    <div class="login">
    <div class="login-card">
     <form class="card" onSubmit={handlesubmit}>
       <div class="log-title">
@@ -82,6 +85,11 @@
    <div class="login-intro">
    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error voluptas numquam in voluptates fugit optio obcaecati placeat, ab aut, est illo necessitatibus earum deleniti sed iste unde, dignissimos nisi asperiores.</p>
    </div>
+  </div>
+  <span >
+    <a class="clo-icon" href="#" onclick="logout()">
+    <i class="ri-close-line"></i></a>
+  </span>
 
   </div>
   </div>
@@ -122,8 +130,9 @@
 <h2 class="plan-head">Various Plans To Suit Your Needs</h2>
    <div class="plan">
     <div class="plan-b">
+      <div class="basic-title">
+      <h1>Basic</h1></div >
       <div>
-        <div class="basic-title"><h1>Basic</h1></div>
           <h2> &#8377 70(Monthly)</h2>
           <h2> &#8377 700(Annul)</h2>
       </div>
@@ -163,24 +172,24 @@
 </section>
   <!-------------footer-------------->
   <hr>
-  <footer id="last">
-    <p id="re"><u>Ways to Reach me :)</u></p>
-    <nav id="link">
-      <ul >
-        <li>
-          <div class="icon"><i class="fa-brands fa-free-code-camp fa-3x"></i></i><a id="profile-link" href="https://www.freecodecamp.org/Maxx_" target="_blank">Freecodecamp</a></div>
-        </li>
-        <li>
-          <div class="icon"><i class="fa-brands fa-instagram fa-3x"></i><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
-        </li>
-        <li>
-          <div class="icon"><i class="fa-solid fa-envelope fa-3x"></i><a href="https://mail.google.com/" target="_blank">Mail</a></div>
-        </li>
-        <li>
-          <div id="profile-link" class="icon"><i class="fa-brands fa-github fa-3x"></i><a href="https://github.com/Maxxjx" target="_blank">Github</a></div>
-        </li>
-      </ul>
-    </nav>
+ <footer>
+  <div class="last">
+  <div class="address">
+  <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex enim debitis amet eos aperiam totam nemo temporibus recusandae aut deleniti explicabo incidunt, quisquam, eaque tempora nisi qui voluptate iusto quaerat!</h4>
+  </div>
+  <div class="services">
+<div>
+  <h3>services</h3>
+</div>
+<div>
+  <h3>products</h3>
+</div>
+<div>
+  <h3>Pricing</h3>
+</div>
+  </div>
+</di>
+ </footer>
     <hr>
     <!-------------Copyright--------------->
     <div id="end"> &copy All Rights Reserved
