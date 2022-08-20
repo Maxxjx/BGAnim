@@ -1,199 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BGAnime</title>
-  <!-- style link -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- icons -->
-  <script src="https://kit.fontawesome.com/a0df00e761.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <!-- fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700">
-<style>
-  /* fonts */
-     @import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap");
-       @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
-   @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;600&display=swap');
-</style>
-<script src="script.js"></script>
-</head>
-<body>
-  <div class="hero-img">
-    <!-- Nav-bar -->
-    <div class="nav-bar">
-         <!-- top logo -->  
-       <div class="logo">
-           <a href="#"><img id="header-img" src="Asset/logo/mLogo.svg" alt="BGAnime logo"></a>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!----------------------- favicon------------------- -->
+      <link rel="apple-touch-icon" sizes="180x180" href="Asset/favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="Asset/favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="Asset/favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <title>BGAnime</title>
+      <!-- style link -->
+      <link rel="stylesheet" href="styles.css">
+      <!-- icons -->
+      <script src="https://kit.fontawesome.com/a0df00e761.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700">
+      <style>
+         /* fonts */
+         @import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap");
+         @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+         @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;600&display=swap');
+      </style>
+      <script src="script.js"></script>
+   </head>
+   <body id="body">
+      <div class="hero-img">
+         <!-- Nav-bar -->
+         <div class="nav-bar">
+            <!-- top logo -->  
+            <div class="logo">
+               <a href="#"><img id="header-img" src="Asset/logo/mLogo.svg" alt="BGAnime logo"></a>
+            </div>
+            <!-- menu-bar -->  
+            <nav style="padding-right: 11px;" >
+               <ul class="side-navbar">
+                  <li><a class="nav-link" href="#a1">About</a></li>
+                  <li><a class="nav-link" href="#a2">Pricing</a></li>
+                  <li><a class="nav-link" href="#">Help</a></li>
+                  <li><a class="nav-link" href="#">Contact</a></li>
+                  <li><a class="nav-link" onclick="log()">Log-In</a></li>
+               </ul>
+            </nav>
          </div>
-             
-         <!-- menu-bar -->  
-        <nav style="padding-right: 11px;" >
-           <ul class="side-navbar">
-            <li><a class="nav-link" href="#a1">About</a></li>
-            <li><a class="nav-link" href="#a2">Pricing</a></li>
-            <li><a class="nav-link" href="#">Help</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
-            <li><a class="nav-link" onclick="log()">Log-In</a></li>
-           </ul>
-         </nav>
+         <!-------------log-in-from--------------------->
+         <div id="full-card">
+            <div class="login">
+               <div class="login-card">
+                  <form class="card" onSubmit={handlesubmit}>
+                     <div class="log-title">
+                        <h3>Login</h3>
+                     </div>
+                     <div>
+                        <div>
+                           <label For="Email or UserName">Email or username</label>
+                           <br />
+                           <input type="text" placeholder="Email or username" required />
+                        </div>
+                        <div>
+                           <label For="Password">Password</label>
+                           <br />
+                           <input type="Password" placeholder="Password" required  />
+                        </div>
+                        <p>
+                           <a href="#"> Forgot Password?</a>
+                        </p>
+                     </div>
+                     <div>
+                        <button type="submit">Log in</button>
+                        <div class="sign-up" action="#">
+                           <p>
+                              <a href="#"> Don't have an account?</a>
+                           </p>
+                           <button>Sign-Up</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="side-card">
+                  <img class="login-img" src="Asset/logo/logotrans.png" alt="company logo"/>
+                  <p>We are more than just an Entertainment<br/>
+                     We make you feel an Experience
+                  </p>
+                  <div class="login-intro">
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error voluptas numquam in voluptates fugit optio obcaecati placeat, ab aut, est illo necessitatibus earum deleniti sed iste unde, dignissimos nisi asperiores.</p>
+                  </div>
+               </div>
+               <span >
+               <a class="clo-icon" href="#" onclick="logout()">
+               <i class="ri-close-line"></i></a>
+               </span>
+            </div>
+         </div>
+         <!------------intro-card------------->  
+         <div class="wel-card">
+            <h2>This is what you been <span class="wel-colr">Waiting For</span></h2>
+            <p>House to every anime in <span class="wel-colr">Extistence</span>  and Guide to every soul wanting to embarce anime at it's finest.</p>
+            <h2>This isn't an <span class="wel-colr">Entertainment</span>.</h2>
+            <h2>It's is an <span class="wel-colr">Experience</span></h2>
+         </div>
       </div>
-   <!-------------log-in-from--------------------->
-   <div id="full-card">
-    <div class="login">
-   <div class="login-card">
-    <form class="card" onSubmit={handlesubmit}>
-      <div class="log-title">
-       
-        <h3>Login</h3>
+      <!----------------description----------------->
+      <div id="a1" class="feature">
+         <div class="feature-title">
+            <h2  class="qut">WATCH YOUR FAVOURIT SHOWS IN HERE:</h2>
+            <p>Housing the biggest   collection of Anime on the internet.Right here to watch at your home.</p>
+         </div>
+         <ul class="feature-list">
+            <li class="feature-points">
+               <img class="feature-icon" src="asset/image/hdicon.svg">
+               <h3 class="qut">HD-Quality</h3>
+               <p>Anime to watch form normal to HD-Quality</p>
+            </li>
+            <li class="feature-points">
+               <img class="feature-icon" src="asset/image/deviceicon.svg">
+               <h3 class="qut">Link Upto-5 device</h3>
+               <p id="description">link upto 5 device to share with your family</p>
+            </li>
+            <li class="feature-points">
+               <img class="feature-icon" src="asset/image/fastupicon.svg">
+               <h3 class="qut">Fast-Update</h3>
+               <p id="description">Get-live fast update for your favourit show</p>
+            </li>
+         </ul>
       </div>
-      <div>
-        <div>
-          <label For="Email or UserName">Email or username</label>
-          <br />
-          <input type="text" placeholder="Email or username" required />
-        </div>
-        <div>
-          <label For="Password">Password</label>
-          <br />
-          <input type="Password" placeholder="Password" required  />
-
-        </div>
-        <p>
-          <a href="#"> Forgot Password?</a>
-        </p>
+      <!---------------Plans-------------->
+      <section id="a2" class="plan-card">
+         <h2 class="plan-head">Various Plans To Suit Your Needs</h2>
+         <div class="plan">
+            <div class="plan-b">
+               <div class="basic-title">
+                  <h1>Basic</h1>
+               </div >
+               <!-- <div>
+                  <i class="fa-thin fa-rocket-launch"></i>
+                  </div> -->
+               <div>
+                  <h2> &#8377 70(Monthly)</h2>
+                  <h2> &#8377 700(Annul)</h2>
+               </div>
+               <div class="fe-card">
+                  <p>Features</p>
+               </div>
+               <div>
+                  <ul>
+                     <li>
+                        <p>Link-upto 2 device</p>
+                     </li>
+                     <li>
+                        <p>Download storage :20GB</p>
+                     </li>
+                     <li>
+                        <p>Stream HD-Quality</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="button basic-btn">
+                  <a href="#">Buy</a>
+               </div>
+            </div>
+            <div class="plan-p">
+               <div class="pro-title">
+                  <h1>Premium</h1>
+               </div>
+               <!-- <div>
+                  <i class="ri-rocket-2-fill"></i> 
+                  </div> -->
+               <div>
+                  <h2> &#8377 150(Monthly)</h2>
+                  <h2> &#8377 1000(Annul)</h2>
+               </div>
+               <div class="fe-card">
+                  <p>Features</p>
+               </div>
+               <div>
+                  <ul>
+                     <li>
+                        <p>Link-Upto 5 device</p>
+                     </li>
+                     <li>
+                        <p>Download Storage :50GB</p>
+                     </li>
+                     <li>
+                        <p>Stream Ultra-HD to HD Quality</p>
+                     </li>
+                     <li>
+                        <p>Early access to episodes</p>
+                     </li>
+                     <li>
+                        <p>Get special Updates from the show</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="pro-btn button">
+                  <a href="#">Buy</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-------------footer-------------->
+      <hr>
+      <footer>
+         <div class="last">
+         <div class="address">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex enim debitis amet eos aperiam totam nemo temporibus recusandae aut deleniti explicabo incidunt, quisquam, eaque tempora nisi qui voluptate iusto quaerat!</h4>
+         </div>
+         <div class="services">
+            <div>
+               <h3>services</h3>
+            </div>
+            <div>
+               <h3>products</h3>
+            </div>
+            <div>
+               <h3>Pricing</h3>
+            </div>
+         </div>
+         </di>
+      </footer>
+      <hr>
+      <!-------------Copyright--------------->
+      <div id="end"> &copy All Rights Reserved
+         A Product Of MDX
       </div>
-      <div>
-        <button type="submit">Log in</button>
-        <div class="sign-up" action="#">
-          <p>
-            <a href="#"> Don't have an account?</a>
-          </p>
-          <button>Sign-Up</button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="side-card">
-      <img class="login-img" src="Asset/logo/logotrans.png" alt="company logo"/>
-    <p>We are more than just an Entertainment<br/>
-   We make you feel an Experience</p>
-   <div class="login-intro">
-   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error voluptas numquam in voluptates fugit optio obcaecati placeat, ab aut, est illo necessitatibus earum deleniti sed iste unde, dignissimos nisi asperiores.</p>
-   </div>
-  </div>
-  <span >
-    <a class="clo-icon" href="#" onclick="logout()">
-    <i class="ri-close-line"></i></a>
-  </span>
-
-  </div>
-  </div>
-    <!------------intro-card------------->  
-    <div class="wel-card">
-      <h2>This is what you been <span class="wel-colr">Waiting For</span></h2>
-      <p>House to every anime in <span class="wel-colr">Extistence</span>  and Guide to every soul wanting to embarce anime at it's finest.</p>
-      <h2>This isn't an <span class="wel-colr">Entertainment</span>.</h2><h2>It's is an <span class="wel-colr">Experience</span></h2>
-    </div>
-  </div>
-   
-  <!----------------description----------------->
-  <div id="a1" class="feature">
-      <div class="feature-title">
-       <h2  class="qut">WATCH YOUR FAVOURIT SHOWS IN HERE:</h2>
-        <p>Housing the biggest   collection of Anime on the internet.Right here to watch at your home.</p>
-      </div>
-      <ul class="feature-list">
-    <li class="feature-points">
-      <img class="feature-icon" src="asset/image/hdicon.svg">
-     <h3 class="qut">HD-Quality</h3>
-      <p>Anime to watch form normal to HD-Quality</p>
-    </li>
-    <li class="feature-points">
-        <img class="feature-icon" src="asset/image/deviceicon.svg">
-    <h3 class="qut">Link Upto-5 device</h3>
-    <p id="description">link upto 5 device to share with your family</p>
-    </li>
-    <li class="feature-points">
-        <img class="feature-icon" src="asset/image/fastupicon.svg">
-    <h3 class="qut">Fast-Update</h3>
-    <p id="description">Get-live fast update for your favourit show</p>
-    </li>
-      </ul>
-</div>
-<!---------------Plans-------------->
-<section id="a2" class="plan-card">
-<h2 class="plan-head">Various Plans To Suit Your Needs</h2>
-   <div class="plan">
-    <div class="plan-b">
-      <div class="basic-title">
-      <h1>Basic</h1></div >
-      <div>
-          <h2> &#8377 70(Monthly)</h2>
-          <h2> &#8377 700(Annul)</h2>
-      </div>
-      <div>
-        <ul>
-          <li><p>Features</p></li>
-          <li><p>Link-upto 2 device</p></li>
-          <li><p>Download storage :20GB</p></li>
-          <li><p>Stream HD-Quality</p></li>
-        </ul>
-      </div>
-      <div class="button basic-btn">
-        <a href="#">Buy</a>
-      </div>
-    </div>
-    <div class="plan-p">
-      <div>
-         <div class="pro-title"><h1>Premium</h1></div>
-          <h2> &#8377 150(Monthly)</h2>
-          <h2> &#8377 1000(Annul)</h2>
-      </div>
-      <div>
-        <ul>
-          <li><p>Features</p></li>
-          <li><p>Link-Upto 5 device</p></li>
-          <li><p>Download Storage :50GB</p></li>
-          <li><p>Stream Ultra-HD to HD Quality</p></li>
-          <li><p>Early access to episodes</p></li>
-          <li><p>Get special Updates from the show</p></li>
-        </ul>
-      </div>
-      <div class="pro-btn button">
-        <a href="#">Buy</a>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-------------footer-------------->
-  <hr>
- <footer>
-  <div class="last">
-  <div class="address">
-  <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex enim debitis amet eos aperiam totam nemo temporibus recusandae aut deleniti explicabo incidunt, quisquam, eaque tempora nisi qui voluptate iusto quaerat!</h4>
-  </div>
-  <div class="services">
-<div>
-  <h3>services</h3>
-</div>
-<div>
-  <h3>products</h3>
-</div>
-<div>
-  <h3>Pricing</h3>
-</div>
-  </div>
-</di>
- </footer>
-    <hr>
-    <!-------------Copyright--------------->
-    <div id="end"> &copy All Rights Reserved
-      A Product Of MDX</div>
-</body>
-
+   </body>
 </html>

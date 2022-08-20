@@ -1,9 +1,16 @@
-body {
+*{
+  scroll-behavior: smooth;
+}
+#body {
   background-color: #000;
   color: white;
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow:-moz-hidden-unscrollable;
+}
+main{
+  
 }
 a {
   color: white;
@@ -265,26 +272,38 @@ li.feature-points {
 .plan ul {
   padding: 0;
 }
-.basic-title {
-  text-align: center;
-  background-color: blue;
-}
-.plan-b {
-  padding: 12px;
-  width: 205px;
-  border: 1px blue solid;
-  border-radius: 16px;
-}
-
+.basic-title,
 .pro-title {
   text-align: center;
-  background-color: red;
+  background-color: blue;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.plan-b,
+.plan-p {
+  width: 40%;
+  max-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+
+.plan-b {
+  border-color: blue;
 }
 .plan-p {
-  padding: 12px;
-  width: 205px;
-  border: 1px red solid;
-  border-radius: 16px;
+  border-color: red;
+}
+.pro-title {
+  background-color: red;
+}
+.fe-card{
+text-align: center;
 }
 /* -----buttons----- */
 .button a:hover {
@@ -307,8 +326,7 @@ li.feature-points {
 }
 
 .basic-btn {
-  margin-top: 116px;
-  margin-left: 19px;
+  margin-top: 68px;
   background-color: blue;
 }
 .basic-btn:hover {
@@ -319,7 +337,7 @@ li.feature-points {
 
 .pro-btn {
   background-color: red;
-  margin: auto;
+  margin-bottom: 20px;
 }
 
 .pro-btn:hover {
