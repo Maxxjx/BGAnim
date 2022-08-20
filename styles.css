@@ -312,7 +312,8 @@ border-radius:50% ;
 .pro-title {
   background-color: red;
 }
-.fe-card{
+.fe-card h3{
+  margin: 0;
 text-align: center;
 }
 /* -----buttons----- */
