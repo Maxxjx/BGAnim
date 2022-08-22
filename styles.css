@@ -23,16 +23,17 @@ a {
   list-style-type: none;
 }
 .hero-img {
-  background-image: url(Asset/image/hero1.png);
+  background-image: url(Asset/image/hero3.png);
   max-width: 100%;
   height: 100vh;
  min-height: 600px;
+ background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 #header-img {
-  width: 212px;
+  width: 158px;
   margin: 0;
   padding-top: 7px;
   padding-left: 11px;
@@ -191,25 +192,27 @@ ul.side-navbar {
 /* ---------------------description -------------------------*/
 .wel-colr {
   color: #dc143c;
-  font-weight: 500;
-  font-family: "Arvo", serif;
+ 
 }
 .wel-card {
-  color: #ffffff;
   position: absolute;
   text-align: left;
-  font-family: "Hahmlet", serif;
-  font-size: 20px;
   line-height: 1;
   letter-spacing: -0.014em;
-  font-weight: 700;
-
   /* border: #361536 solid; */
   margin: 0;
   padding: 175px 0 0 46px;
-  font-size: large;
-  width: max(550px) !important;
-  height: max(320px) !important;
+  width: 100%;
+}
+.wel-card p{
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 142%;
+}
+.wel-card h2{
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 342%;
 }
 /* feature----------- */
 .feature{
@@ -381,6 +384,7 @@ footer {
   text-align: center;
 }
 .foo-logo {
+  min-width: 140px;
   width: 18%;
 }
 footer {
@@ -398,6 +402,7 @@ footer {
 }
 .contact-links {
   display: flex;
+  flex-flow: row wrap;
   gap: 31px;
   font-size: 41px;
   margin-block: 0;
