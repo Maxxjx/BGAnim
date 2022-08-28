@@ -493,7 +493,14 @@ footer {
     height: 100vh;
     min-height: 100vh;
   }
+  .menu{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    min-width: 200px;
+  }
   #nav-opicon {
+    text-align: end;
     display: block;
   }
   #nav {
@@ -504,8 +511,8 @@ footer {
     position: relative;
     width: 80%;
     background-color: hsla(0, 0%, 0%, 0.849);
+    -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
-    --webkit-backdrop-filter: blur(32px);
     overflow: hidden;
     height: 100vh;
     transition: right 3ms;
