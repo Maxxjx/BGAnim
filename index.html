@@ -41,21 +41,25 @@
    <body id="body">
       <div class="hero-img">
          <!-- Nav-bar -->
-         <div id="nav-bar">
+         <di id="nav-bar">
             <!-- top logo -->  
             <div class="logo">
                <a href="#"><img id="header-img" src="Asset/logo/mLogo.svg" alt="BGAnime logo"></a>
             </div>
             <!-- menu-bar -->  
-            <nav style="padding-right: 11px;" >
-               <ul class="side-navbar">
+            <nav id="nav">
+               <ul id="side-navbar"> 
+                  <li><a><i id="nav-clicon"  onclick="closeMenu()" class="ri-close-line"></i></a></li>
                   <li><a class="nav-link" href="#a1">About</a></li>
                   <li><a class="nav-link" href="#a2">Pricing</a></li>
-                  <li><a class="nav-link" href="#">Help</a></li>
+                  <li><a class="nav-link" href="#a4">Help</a></li>
                   <li><a class="nav-link" href="#a4">Contact</a></li>
                   <li><a class="nav-link" onclick="log()">Log-In</a></li>
-               </ul>
+               </ul> 
             </nav>
+              <a onclick="openMenu()"><i id="nav-opicon" class="ri-menu-line"></i> </a> 
+              
+        </div>
          </div>
          <!-------------log-in-from--------------------->
          <div id="full-card">
@@ -108,8 +112,8 @@
          </div>
          <!------------intro-card------------->  
          <div class="wel-card">
-            <h2>This isn't an <span >Entertainment</span></h2>
-            <h2>It's is an <span class="wel-colr">Experience</span></h2>
+            <h1>This isn't an <span >Entertainment</span></h1>
+            <h1>It's is an <span class="wel-colr">Experience</span></h1>
             <p>Turn <span class="wel-colr">Entertainment</span>  into <span class="wel-colr">Something More</span>.</p>
          </div>
       </div>
@@ -133,7 +137,7 @@
             <li class="feature-points">
                <img class="feature-icon" src="Asset/image/fastupicon.svg">
                <h3 class="qut">Fast-Update</h3>
-               <p id="description">Get-live fast update for your favourit show</p>
+               <p id="description">Get-live fast update for your favourite show</p>
             </li>
          </ul>
       </div>
@@ -146,8 +150,7 @@
                   <h1>Basic</h1>
                </div >
                <div class="plan-icon">
-                  <span class="p-icon">
-                     <i class="ri-send-plane-fill"></i></span>
+                 <img src="Asset/image/paper-plane.svg" class="p-icon">
                </div>
                <div>
                   <h2> &#8377 70(Monthly)</h2>
@@ -178,9 +181,7 @@
                   <h1>Premium</h1>
                </div>
                <div class="plan-icon">
-                  <span class="p-icon">
-                     <i class="ri-rocket-2-fill"></i> 
-                     </span>
+               <img src="Asset/image/Rocket.svg"class="p-icon">
                   </div>
                <div>
                   <h2> &#8377 150(Monthly)</h2>
