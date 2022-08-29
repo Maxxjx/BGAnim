@@ -98,7 +98,7 @@ a {
 
 #nav-opicon,
 #nav-clicon {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 #nav-opicon {
@@ -270,7 +270,7 @@ img.feature-icon {
 
 .feature-title {
   text-align: center;
-  padding: 5px;
+  padding: 11px;
 }
 
 .feature-list {
@@ -473,6 +473,7 @@ footer {
 
 .contact-links {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
   gap: 31px;
   font-size: 41px;
@@ -497,7 +498,6 @@ footer {
     display: flex;
     justify-content: end;
     width: 100%;
-    min-width: 200px;
   }
   #nav-opicon {
     text-align: end;
@@ -518,8 +518,6 @@ footer {
     transition: right 3ms;
   }
 
-  
-
   #side-navbar {
     width: 100%;
     display: flex;
@@ -528,8 +526,34 @@ footer {
     padding: 0;
     margin: 0;
   }
+  #wel-card {
+    padding-right: 0px;
+    margin-left: 26px;
+    margin-top: 339px;
+   }
+   
+  #wel-card  h1 {
+    font-size: 1.9rem;
+   }
+   
+  #wel-card  p{
+    font-size: 106%;
+    line-height: 25px;
+    letter-spacing: -0.19px;
+    font-style: normal;
+    }
 
-  
+    img.feature-icon {
+      width: 3rem;
+    }
+    .qut {
+      color: #dc143c;
+      font-family: "Arvo", serif;
+      font-size: 1.2rem;
+    }
+    .feature-card{
+      width: 21rem;
+    }
   li.feature-points{
     display: flex;
   }
