@@ -33,11 +33,11 @@ function  openMenu(){
   document.getElementById("nav").style.display="block";
   document.getElementById("nav-opicon").style.display="none";
   document.getElementById("nav-clicon").style.display="block";
-  document.getElementById("wel-card").style.display="none";
+  // document.getElementById("wel-card").style.display="none";
 }
 function  closeMenu(){
   document.getElementById("nav").style.display="none";
   document.getElementById("nav-opicon").style.display="block";
   document.getElementById("nav-clicon").style.display="none";
-  document.getElementById("wel-card").style.display="block";
+  // document.getElementById("wel-card").style.display="block";
 }
